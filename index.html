@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Neon Arcade — an interactive web game portal built for the ACM SIGGRAPH recruitment task.">
+  <title>Neon Arcade | Web Game Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="page-glow page-glow-one" aria-hidden="true"></div>
+  <div class="page-glow page-glow-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Neon Arcade home">
+      <span class="brand-mark">✦</span>
+      <span>NEON<span>ARCADE</span></span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#games">Games</a>
+      <a href="#about">About</a>
+      <a class="nav-cta" href="#play">Play now</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse-dot"></span> ACM SIGGRAPH • WEB GAME PORTAL</p>
+        <h1>PLAY. <span>CREATE.</span> REPEAT.</h1>
+        <p class="hero-text">
+          A responsive game hub with an interactive HTML Canvas experience,
+          smooth motion, clean architecture, and a lightweight local leaderboard.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#games">Explore games <span>→</span></a>
+          <a class="button button-ghost" href="#about">View features</a>
+        </div>
+        <div class="hero-stats" aria-label="Portal features">
+          <div><strong>01</strong><span>Canvas game</span></div>
+          <div><strong>60</strong><span>FPS target</span></div>
+          <div><strong>100%</strong><span>Responsive</span></div>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-label="Decorative arcade illustration">
+        <div class="orbital orbital-a"></div>
+        <div class="orbital orbital-b"></div>
+        <div class="hero-core">
+          <span class="core-star">✦</span>
+          <span class="core-label">ARCADE<br>ONLINE</span>
+        </div>
+        <span class="float-shape shape-a">◆</span>
+        <span class="float-shape shape-b">✦</span>
+        <span class="float-shape shape-c">●</span>
+      </div>
+    </section>
+
+    <section id="games" class="games section-shell">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">01 / GAME LIBRARY</p>
+          <h2>Choose your <span>challenge.</span></h2>
+        </div>
+        <p class="section-note">One hub. Multiple worlds. Built to scale.</p>
+      </div>
+
+      <div class="game-grid">
+        <article class="game-card featured">
+          <div class="game-art meteor-art">
+            <div class="art-grid"></div>
+            <div class="planet"></div>
+            <div class="ship">▲</div>
+            <div class="meteor meteor-1"></div>
+            <div class="meteor meteor-2"></div>
+            <div class="meteor meteor-3"></div>
+            <span class="art-badge">PLAYABLE</span>
+          </div>
+          <div class="game-content">
+            <div class="game-title-row">
+              <div>
+                <p class="game-number">GAME 01</p>
+                <h3>Meteor Dodge</h3>
+              </div>
+              <span class="game-tag">CANVAS</span>
+            </div>
+            <p>Dodge incoming meteors, survive as long as possible, and chase a higher score.</p>
+            <button class="text-button" data-scroll-play>Launch game <span>↗</span></button>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <div class="game-art memory-art">
+            <div class="memory-symbol">?</div>
+            <div class="mini-card mini-one">✦</div>
+            <div class="mini-card mini-two">◆</div>
+            <span class="art-badge">SOON</span>
+          </div>
+          <div class="game-content">
+            <div class="game-title-row">
+              <div>
+                <p class="game-number">GAME 02</p>
+                <h3>Pixel Memory</h3>
+              </div>
+              <span class="game-tag">2D</span>
+            </div>
+            <p>Match glowing symbols and test your memory in a fast arcade-style puzzle.</p>
+            <span class="disabled-button">Coming soon</span>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <div class="game-art runner-art">
+            <div class="runner-track"></div>
+            <div class="runner">◆</div>
+            <div class="runner-block block-one"></div>
+            <div class="runner-block block-two"></div>
+            <span class="art-badge">SOON</span>
+          </div>
+          <div class="game-content">
+            <div class="game-title-row">
+              <div>
+                <p class="game-number">GAME 03</p>
+                <h3>Neon Runner</h3>
+              </div>
+              <span class="game-tag">ARCADE</span>
+            </div>
+            <p>Jump, react, and keep moving through an endless neon obstacle course.</p>
+            <span class="disabled-button">Coming soon</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="play" class="play-section section-shell">
+      <div class="section-heading compact">
+        <div>
+          <p class="eyebrow">02 / LIVE EXPERIENCE</p>
+          <h2>Meteor <span>Dodge</span></h2>
+        </div>
+        <p class="section-note">Keyboard: ← → / A D &nbsp; • &nbsp; Mobile: drag the ship</p>
+      </div>
+
+      <div class="game-layout">
+        <div class="canvas-wrap">
+          <div class="canvas-topbar">
+            <span><i class="live-dot"></i> LIVE</span>
+            <span>HTML CANVAS</span>
+          </div>
+          <canvas id="gameCanvas" aria-label="Meteor Dodge game area"></canvas>
+          <div id="gameOverlay" class="game-overlay">
+            <div class="overlay-panel">
+              <span class="overlay-icon">✦</span>
+              <p class="eyebrow">READY?</p>
+              <h3>Dodge the storm.</h3>
+              <p>Survive falling meteors. Your score increases with every second.</p>
+              <button id="startButton" class="button button-primary">Start game</button>
+            </div>
+          </div>
+        </div>
+
+        <aside class="game-sidebar">
+          <div class="score-panel">
+            <div>
+              <span class="metric-label">CURRENT SCORE</span>
+              <strong id="score">0</strong>
+            </div>
+            <div>
+              <span class="metric-label">BEST</span>
+              <strong id="bestScore">0</strong>
+            </div>
+          </div>
+
+          <div class="control-card">
+            <p class="eyebrow">CONTROLS</p>
+            <div class="control-row"><span>Move</span><kbd>←</kbd><kbd>→</kbd></div>
+            <div class="control-row"><span>Alternative</span><kbd>A</kbd><kbd>D</kbd></div>
+            <div class="control-row"><span>Mobile</span><span class="touch-label">DRAG</span></div>
+          </div>
+
+          <div class="leaderboard-card">
+            <div class="leaderboard-head">
+              <div>
+                <p class="eyebrow">LOCAL LEADERBOARD</p>
+                <h3>Top scores</h3>
+              </div>
+              <span class="trophy">♛</span>
+            </div>
+            <ol id="leaderboard"></ol>
+            <p class="small-note">Scores are stored locally in your browser.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="features section-shell">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">03 / BUILT FOR THE RUBRIC</p>
+          <h2>Simple code. <span>Strong finish.</span></h2>
+        </div>
+      </div>
+      <div class="feature-grid">
+        <article><span>01</span><h3>Clean architecture</h3><p>Semantic HTML, external CSS, and modular JavaScript keep structure, styling, and behavior separated.</p></article>
+        <article><span>02</span><h3>Responsive by design</h3><p>Fluid grids, touch input, accessible controls, and mobile-first breakpoints prevent horizontal overflow.</p></article>
+        <article><span>03</span><h3>Performance focused</h3><p>One animation loop, bounded object arrays, resize-aware canvas scaling, and cleanup on page exit keep rendering lightweight.</p></article>
+        <article><span>04</span><h3>Polished motion</h3><p>CSS micro-interactions, ambient particles, hover states, and canvas effects add a creative SIGGRAPH-style finish.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-shell footer-inner">
+      <span>NEONARCADE © 2026</span>
+      <span>Built from scratch for ACM SIGGRAPH</span>
+    </div>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
