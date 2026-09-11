@@ -1,6 +1,6 @@
 # Neon Arcade — ACM SIGGRAPH Web Game Portal
 
-A responsive game hub built from scratch for the 2nd Year Web Game Portal task.
+A responsive game hub built from scratch for the Web Game Portal task.
 
 ## Included requirements
 
